@@ -4,10 +4,7 @@ function GenerateQuestionsPage() {
   return new Promise(async (resolve, reject) => {
     try {
       await generateGPTQuestions();
-      setTimeout(() => {
-        console.log('Questions generated');
-        resolve("the script has ran, wait for the results");
-      }, 2000);
+      resolve("Questions generated successfully!");
     } catch (error) {
       console.error('Error generating questions:', error);
       reject(error);

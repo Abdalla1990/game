@@ -2,12 +2,13 @@
 
 import React, { createContext, Suspense, useContext, useMemo } from 'react';
 import { usePersistGameState } from '@/hooks/use-persist-game-state';
-import { Team } from '@/database/types';
+import { GameState, Team } from '@/database/types';
 import { useParams } from 'next/navigation';
 import Loading from '@/account/loading';
 import { useRound } from './queries';
 
 interface GameContextType {
+  setGameState: (update: (current: GameState) => Partial<GameState>) => void;
   scores: { [teamId: string]: number };
   currentTurn: string | null;
   answeredQuestions: string[];
@@ -75,6 +76,7 @@ const GameProviderInner = ({ children, roundId }: { children: React.ReactNode, r
   }
 
   const value: GameContextType = useMemo(() => ({
+    setGameState,
     scores: gameState.scores,
     currentTurn: roundData.teams[gameState.currentTurnIdx]?.id ?? null,
     teams: roundData.teams,

@@ -22,7 +22,20 @@ const ImageQuestion: React.FC<ImageQuestionProps> = ({ question, selectedChoice,
   return (
     <div>
       <h2 className="text-xl font-bold mb-4">{question.title}</h2>
-      <img src={question['image-hint']} alt="Question" className="mb-4 max-h-60 object-contain" />
+      {question['image-type'] === 'base64' ? (
+        <img
+          src={question['image-data']}
+          alt="Question"
+          className="mb-4 max-h-60 object-contain"
+        />
+      ) : (
+        // Fallback to original image hint if no processed image data
+        <img
+          src={question['image-hint']}
+          alt="Question"
+          className="mb-4 max-h-60 object-contain"
+        />
+      )}
       {question['image-instructions'] && (
         <p className="mb-2 italic text-gray-600">{question['image-instructions']}</p>
       )}

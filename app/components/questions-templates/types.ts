@@ -24,7 +24,10 @@ export interface MultipleChoiceData extends BaseQuestionData {
 
 export interface ImageQuestionData extends BaseQuestionData {
   'question-type': QuestionType.Image;
-  'image-hint': string;  // Required for image questions
+  'image-hint': string;  // Original image URL or placeholder
+  'image-type'?: 'svg' | 'base64';  // Type of processed image
+  'image-data'?: string;  // SVG markup or base64 data
+  'original-image-hint'?: string;  // Keep track of original hint
   'correct-answer': string;  // The correct answer text
   choices?: string[];  // Optional multiple choice answers
   'correct-answer-index'?: number;  // Required only if choices are provided
@@ -32,7 +35,8 @@ export interface ImageQuestionData extends BaseQuestionData {
 
 export interface VoiceQuestionData extends BaseQuestionData {
   'question-type': QuestionType.Voice;
-  'voice-url': string;  // Required for voice questions
+  'audio-type'?: 'base64';  // Type of processed image
+  'audio-data'?: string;  // SVG markup or base64 data
   'correct-answer': string;  // The correct answer text
   transcript?: string;  // Optional transcript for accessibility
 }

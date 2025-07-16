@@ -6,7 +6,7 @@ const MultipleChoiceQuestion: React.FC<MultipleChoiceQuestionProps> = ({ questio
     setSelectedChoice(idx);
     onAnswer(idx === question['correct-answer-index']);
   };
-
+  console.log({ question })
   return (
     <div>
       <h2 className="text-xl font-bold mb-4">{question.title}</h2>

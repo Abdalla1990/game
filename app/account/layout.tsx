@@ -2,8 +2,8 @@
 
 import { useRouter, usePathname } from 'next/navigation';
 import { ReactNode, Suspense } from 'react';
-import Button from '../components/ui/Button';
-import { useAuth } from '../context/AuthContext';
+import Button from '@/components/ui/Button';
+import { useAuth } from '@/context/AuthContext';
 import Loading from './loading';
 
 type AccountLayoutProps = Readonly<{

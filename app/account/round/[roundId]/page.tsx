@@ -66,8 +66,6 @@ function renderQuestionCell({
 
 function GamePageInner(props: any) {
   const { scores, currentTurn, answeredQuestions } = useGame();
-
-
   const { roundData, questionMatrix, router, roundId, categoriesData } = props;
   const pointsRows = [100, 100, 300, 300, 500, 500];
   const [modalOpen, setModalOpen] = useState(false);

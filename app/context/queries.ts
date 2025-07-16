@@ -1,6 +1,6 @@
 import { UseQueryResult, useQuery } from '@tanstack/react-query';
-import { getRound, getRounds } from '../database/rounds';
-import { Round, Category, Question, GameState } from '../database/types';
+import { getRound, getRounds } from '@/database/rounds';
+import { Round, Category, Question, GameState } from '@/database/types';
 
 export function useRound(roundId: string | undefined): UseQueryResult<Round & GameState, Error> {
   return useQuery({

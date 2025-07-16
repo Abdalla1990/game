@@ -1,6 +1,6 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
+import { redirect, useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { useAuth } from '@/context/AuthContext';
 import { useQuestions } from '@/context/queries';
@@ -18,8 +18,10 @@ export default function GameQuestionPage({
   const router = useRouter();
   const { user } = useAuth();
   const { data: questions = [] } = useQuestions();
-  const { currentTurn, answerQuestion } = useGame();
+  const { currentTurn, answerQuestion, setGameState, answeredQuestions } = useGame();
   const question = questions.find(q => q.id === params.questionId) as QuestionData | undefined;
+  // const isAnswered = !!answeredQuestions.find(item => item?.split("-")[0] === question?.categoryId && item?.split("-")[1] === question?.id)
+
   const [answerState, setAnswerState] = useState<{
     selectedChoice: number | null;
     userAnswer: string | null;
@@ -32,6 +34,9 @@ export default function GameQuestionPage({
     isCorrect: false
   });
 
+  // if (isAnswered) {
+  //   redirect(`/account/round/${params.roundId}`)
+  // }
   if (!user) {
     return (
       <div className="max-w-md mx-auto p-4 text-center">
@@ -57,8 +62,17 @@ export default function GameQuestionPage({
 
   const handleAnswer = (isCorrect: boolean) => {
     setAnswerState(prev => ({ ...prev, showModal: true, isCorrect }));
+
     if (isCorrect && currentTurn) {
       answerQuestion(currentTurn, question.points, { questionId: question.id, categoryId: question.categoryId });
+    } else if (!isCorrect) {
+      setGameState((current) => ({
+        ...current,
+        answeredQuestions: [
+          ...(current?.answeredQuestions ?? []),
+          `${question.categoryId}-${question.id}`
+        ]
+      }));
     }
   };
 
@@ -67,10 +81,15 @@ export default function GameQuestionPage({
   };
 
   const getUserAnswer = () => {
-    if (question['question-type'] === 'range') {
+    if (question['question-type'] !== 'multiple-choice') {
       return answerState.userAnswer || 'No answer provided';
     }
-    if (answerState.selectedChoice !== null && question.choices) {
+    if (
+      answerState.selectedChoice !== null &&
+      question &&
+      'choices' in question &&
+      Array.isArray(question.choices)
+    ) {
       return question.choices[answerState.selectedChoice];
     }
     return 'No answer provided';
@@ -100,15 +119,11 @@ export default function GameQuestionPage({
             setAnswerState(prev => ({ ...prev, userAnswer: value }))
         })[question['question-type'] || ""]}
       </div>
-
+      {console.log({ question })}
       <AnswerModal
         isOpen={answerState.showModal}
         isCorrect={answerState.isCorrect}
-        correctAnswer={
-          question?.['question-type'] !== 'multiple-choice'
-            ? `Correct answer: ${question?.['correct-answer']}`
-            : `Correct answer: ${question?.choices[question?.['correct-answer-index']]}`
-        }
+        correctAnswer={question?.['correct-answer'] || question?.choices?.[question?.['correct-answer-index']]}
         userAnswer={getUserAnswer()}
         onClose={handleModalClose}
       />

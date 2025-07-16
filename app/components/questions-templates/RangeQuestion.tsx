@@ -2,7 +2,7 @@ import React from 'react';
 
 
 import { RangeQuestionProps } from './types';
-import Button from '../ui/Button';
+import Button from '@/components/ui/Button';
 
 
 const RangeHint: React.FC<{ range: number; unit?: string }> = ({ range, unit }) => {
@@ -49,7 +49,7 @@ const RangeQuestion: React.FC<RangeQuestionProps> = ({ question, userAnswer, set
 
     // Check if the answer is within the allowed range of the correct answer
     const isWithinRange =
-      Math.abs(numericAnswer - correctAnswer) <= question.range;
+      numericAnswer >= question["min-value"] && numericAnswer <= question["max-value"];
 
     onAnswer(isWithinRange);
   };
@@ -71,8 +71,6 @@ const RangeQuestion: React.FC<RangeQuestionProps> = ({ question, userAnswer, set
           id="answer-input"
           type="number"
           step="any"
-          min={question['min-value']}
-          max={question['max-value']}
           className="w-full p-2 border rounded"
           value={userAnswer || ''}
           onChange={handleInputChange}

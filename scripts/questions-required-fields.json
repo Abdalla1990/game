@@ -63,15 +63,17 @@
     "required": [
       "min-value",
       "max-value",
-      "correct-value"
+      "correct-answer",
+      "range"
     ],
     "optional": [
       "unit"
     ],
     "validation": {
+      "range": "number, must be declared as the acceptable range around the correct value considering min-value and max-value",
       "min-value": "number, the lower bound of the acceptable range",
       "max-value": "number, must be greater than min-value",
-      "correct-value": "number, the exact correct answer (must be between min-value and max-value)",
+      "correct-answer": "number, the exact correct answer (must be between min-value and max-value)",
       "unit": "string, optional unit for display (e.g., 'years', 'dollars', 'meters')"
     }
   },

@@ -17,19 +17,24 @@ const VoiceQuestion: React.FC<VoiceQuestionProps> = ({ question, userAnswer, set
     <div>
       <h2 className="text-xl font-bold mb-4">{question.title}</h2>
       <audio controls className="mb-4 w-full">
-        <source src={question['voice-url']} type="audio/mpeg" />
+        {
+          question['audio-type'] === 'base64' ? (
+            <source src={question['audio-data']} type="audio/mp3" />
+
+          ) : (
+            <source src={question['voice-url']} type="audio/mpeg" />
+          )
+        }
         {question.transcript && (
           <track kind="captions" src="" label="Transcript" default />
         )}
         Your browser does not support the audio element.
       </audio>
-      {question['image-hint'] && <img src={question['image-hint']} alt="Hint" className="mb-4 max-h-60 object-contain" />}
-      {question['image-instructions'] && <p className="mb-2 italic text-gray-600">{question['image-instructions']}</p>}
 
       <div className="space-y-4">
         <div>
           <label htmlFor="answer-input" className="block mb-2 font-semibold">
-            What did you hear? Enter your answer:
+            وش سمعت ؟
           </label>
           <input
             id="answer-input"

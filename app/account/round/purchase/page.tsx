@@ -9,8 +9,8 @@ import {
   useElements,
 } from '@stripe/react-stripe-js';
 import { useRouter } from 'next/navigation';
-import { useAuth } from '../../../context/AuthContext';
-import Button from '../../../components/ui/Button';
+import { useAuth } from '@/context/AuthContext';
+import Button from '@/components/ui/Button';
 
 const stripePromise = loadStripe('pk_test_51NLOu3FfF5xC6f...'); // Replace with your Stripe publishable key
 

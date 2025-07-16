@@ -1,0 +1,142 @@
+[
+  {
+    "id": "q1",
+    "categoryId": "cat1",
+    "points": 100,
+    "title": "متى تأسست الجمهورية العربية السورية؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "1946",
+      "1950",
+      "1960",
+      "1970"
+    ],
+    "correct-answer-index": 0
+  },
+  {
+    "id": "q2",
+    "categoryId": "cat2",
+    "points": 300,
+    "title": "ما هو النهر الأطول في العالم العربي؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "النيل",
+      "الفرات",
+      "التيجرس",
+      "الأردن"
+    ],
+    "correct-answer-index": 0
+  },
+  {
+    "id": "q3",
+    "categoryId": "cat3",
+    "points": 500,
+    "title": "ما هو العنصر الكيميائي الذي يحمل الرمز Fe؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "الذهب",
+      "الفضة",
+      "الحديد",
+      "النحاس"
+    ],
+    "correct-answer-index": 2
+  },
+  {
+    "id": "q4",
+    "categoryId": "cat4",
+    "points": 100,
+    "title": "من هو اللاعب الذي سجل الهدف الأول في كأس العالم 2018؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "كريستيانو رونالدو",
+      "ليونيل ميسي",
+      "نيمار",
+      "يوري غازينسكي"
+    ],
+    "correct-answer-index": 3
+  },
+  {
+    "id": "q5",
+    "categoryId": "cat5",
+    "points": 300,
+    "title": "ما هو اللون الرئيسي في علم السعودية؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "الأحمر",
+      "الأخضر",
+      "الأزرق",
+      "الأصفر"
+    ],
+    "correct-answer-index": 1
+  },
+  {
+    "id": "q6",
+    "categoryId": "cat6",
+    "points": 500,
+    "title": "ما هي اللغة الأم للشاعر جبران خليل جبران؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "العربية",
+      "الفرنسية",
+      "الإنجليزية",
+      "الأرمنية"
+    ],
+    "correct-answer-index": 0
+  },
+  {
+    "id": "q7",
+    "categoryId": "cat7",
+    "points": 100,
+    "title": "ما هو عدد الأعمدة الخمسة في الإسلام؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct-answer-index": 2
+  },
+  {
+    "id": "q8",
+    "categoryId": "cat8",
+    "points": 300,
+    "title": "من هو مؤلف رواية 'الأيام'؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "نجيب محفوظ",
+      "توفيق الحكيم",
+      "طه حسين",
+      "يوسف إدريس"
+    ],
+    "correct-answer-index": 2
+  },
+  {
+    "id": "q9",
+    "categoryId": "cat1",
+    "points": 500,
+    "title": "ما هو تاريخ معركة القادسية؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "636م",
+      "642م",
+      "656م",
+      "661م"
+    ],
+    "correct-answer-index": 0
+  },
+  {
+    "id": "q10",
+    "categoryId": "cat2",
+    "points": 100,
+    "title": "ما هي عاصمة الجزائر؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "الجزائر",
+      "وهران",
+      "قسنطينة",
+      "تلمسان"
+    ],
+    "correct-answer-index": 0
+  }
+]

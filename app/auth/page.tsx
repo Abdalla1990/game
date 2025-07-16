@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { useAuth } from '../context/AuthContext';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useAuth } from '@/context/AuthContext';
+import { redirect, useRouter, useSearchParams } from 'next/navigation';
 
 export default function AuthPage() {
   const router = useRouter();
@@ -36,21 +36,7 @@ export default function AuthPage() {
 
   if (user) {
     return (
-      <div className="max-w-md mx-auto mt-20 p-4 border rounded">
-        <h2 className="text-xl font-bold mb-4">Welcome, {user.name}</h2>
-        <button
-          className="bg-red-600 text-white py-2 px-4 rounded"
-          onClick={() => logout()}
-        >
-          Logout
-        </button>
-        <button
-          className="bg-red-600 text-white py-2 px-4 rounded"
-          onClick={() => { router.push("/create-round") }}
-        >
-          Start a game!
-        </button>
-      </div>
+      redirect("/account")
     );
   }
 
