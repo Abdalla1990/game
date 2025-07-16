@@ -1,0 +1,119 @@
+[
+  {
+    "id": "q1",
+    "categoryId": "cat1",
+    "points": 100,
+    "title": "من هو القائد الذي قاد الحملة الصليبية الأولى؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "بيتر الحداد",
+      "جودفري بويون",
+      "بلدوين الأول",
+      "ريتشارد قلب الأسد"
+    ],
+    "correct-answer-index": 1
+  },
+  {
+    "id": "q6",
+    "categoryId": "cat6",
+    "points": 100,
+    "title": "أي من هذه الكلمات تعتبر مثنى في اللغة العربية؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "كتاب",
+      "كتابان",
+      "كتب",
+      "كتّاب"
+    ],
+    "correct-answer-index": 1
+  },
+  {
+    "id": "q2",
+    "categoryId": "cat2",
+    "points": 300,
+    "title": "في أي دولة تقع هذه الأهرامات؟",
+    "question-type": "image",
+    "image-hint": "https://example.com/images/giza-pyramids.jpg",
+    "correct-answer": "مصر"
+  },
+  {
+    "id": "q3",
+    "categoryId": "cat3",
+    "points": 300,
+    "title": "ماذا يُسمى الصوت التالي في علم الأحياء؟",
+    "question-type": "voice",
+    "voice-url": "https://example.com/audio/bat-echolocation.mp3",
+    "transcript": "هذا الصوت يمثل صدى تحديد المواقع الذي تستخدمه الخفافيش للتنقل.",
+    "correct-answer": "صدى تحديد المواقع"
+  },
+  {
+    "id": "q4",
+    "categoryId": "cat4",
+    "points": 300,
+    "title": "كم عدد الأهداف التي سجلها بيليه في مسيرته الاحترافية؟",
+    "question-type": "range",
+    "range": 100,
+    "correct-answer": 767,
+    "unit": "هدف"
+  },
+  {
+    "id": "q7",
+    "categoryId": "cat7",
+    "points": 300,
+    "title": "أي مسجد يظهر في هذه الصورة؟",
+    "question-type": "image",
+    "image-hint": "https://example.com/images/masjid-al-haram.jpg",
+    "correct-answer": "المسجد الحرام"
+  },
+  {
+    "id": "q8",
+    "categoryId": "cat8",
+    "points": 300,
+    "title": "أي حيوان يصدر هذا الصوت؟",
+    "question-type": "voice",
+    "audio-url": "https://example.com/audio/elephant-trumpet.mp3",
+    "transcript": "يمكن سماع صوت أذان الفيل في هذا المقطع الصوتي.",
+    "correct-answer": "فيل"
+  },
+  {
+    "id": "q9",
+    "categoryId": "cat2",
+    "points": 300,
+    "title": "كم يبلغ طول نهر الأمازون تقريبًا؟",
+    "question-type": "range",
+    "min-value": 6000,
+    "max-value": 7000,
+    "correct-value": 6400,
+    "unit": "كيلومتر"
+  },
+  {
+    "id": "q5",
+    "categoryId": "cat5",
+    "points": 500,
+    "title": "ما اسم هذا النمط الموسيقي الظاهر في هذا المقطع؟",
+    "question-type": "video",
+    "video-url": "https://example.com/videos/arabic-music.mp4",
+    "choices": [
+      "الطرب الأصيل",
+      "العزف الكلاسيكي",
+      "الموشح الأندلسي",
+      "القدود الحلبية"
+    ],
+    "correct-answer-index": 2
+  },
+  {
+    "id": "q10",
+    "categoryId": "cat6",
+    "points": 500,
+    "title": "أي لهجة عربية يُسمع في هذا المقطع؟",
+    "question-type": "video",
+    "video-url": "https://example.com/videos/arabic-shami-dialect.mp4",
+    "choices": [
+      "اللهجة المصرية",
+      "اللهجة الشامية",
+      "اللهجة الخليجية",
+      "اللهجة المغربية"
+    ],
+    "correct-answer-index": 1
+  }
+]

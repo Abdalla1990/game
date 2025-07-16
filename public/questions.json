@@ -1,0 +1,381 @@
+[
+  {
+    "id": "cat1-q1",
+    "categoryId": "cat1",
+    "points": 100,
+    "title": "In which year did the Titanic sink?",
+    "choices": [
+      "1912",
+      "1905",
+      "1920",
+      "1898"
+    ],
+    "question-type": "video",
+    "correct-answer-index": 0,
+    "video-url": "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    "image-instructions": "Watch this historical footage of the Titanic before it sank."
+  },
+  {
+    "id": "cat1-q2",
+    "categoryId": "cat1",
+    "points": 100,
+    "title": "In which year did the Titanic sink?",
+    "range": 3,
+    "question-type": "range",
+    "correct-answer": "1912",
+    "image-hint": null,
+    "image-instructions": null
+  },
+  {
+    "id": "cat1-q3",
+    "categoryId": "cat1",
+    "points": 300,
+    "title": "Who wrote the play 'Romeo and Juliet'?",
+    "choices": [
+      "William Shakespeare",
+      "Charles Dickens",
+      "Mark Twain",
+      "Jane Austen"
+    ],
+    "correct-answer-index": 0,
+    "image-hint": null,
+    "image-instructions": null,
+    "question-type": "multiple-choice"
+  },
+  {
+    "id": "cat1-q4",
+    "categoryId": "cat1",
+    "points": 300,
+    "title": "What is the chemical symbol for Gold?",
+    "choices": [
+      "Au",
+      "Ag",
+      "Fe",
+      "Pb"
+    ],
+    "correct-answer-index": 0,
+    "image-hint": null,
+    "image-instructions": null,
+    "question-type": "multiple-choice"
+  },
+  {
+    "id": "cat1-q5",
+    "categoryId": "cat1",
+    "points": 500,
+    "title": "Which year did the French Revolution begin?",
+    "choices": [
+      "1789",
+      "1776",
+      "1804",
+      "1812"
+    ],
+    "correct-answer-index": 0,
+    "image-hint": null,
+    "image-instructions": null,
+    "question-type": "multiple-choice"
+  },
+  {
+    "id": "cat1-q6",
+    "categoryId": "cat1",
+    "points": 500,
+    "title": "Name the largest desert in the world.",
+    "choices": [
+      "Sahara",
+      "Gobi",
+      "Kalahari",
+      "Arctic"
+    ],
+    "correct-answer-index": 3,
+    "image-hint": null,
+    "image-instructions": null,
+    "question-type": "multiple-choice"
+  },
+  {
+    "id": "cat6-q1",
+    "categoryId": "cat6",
+    "points": 100,
+    "title": "Which planet is known as the Red Planet?",
+    "choices": [
+      "Mars",
+      "Venus",
+      "Jupiter",
+      "Saturn"
+    ],
+    "correct-answer-index": 0,
+    "image-hint": null,
+    "image-instructions": null,
+    "question-type": "multiple-choice"
+  },
+  {
+    "id": "cat6-q2",
+    "categoryId": "cat6",
+    "points": 100,
+    "title": "What is H2O commonly known as?",
+    "choices": [
+      "Water",
+      "Oxygen",
+      "Hydrogen",
+      "Salt"
+    ],
+    "correct-answer-index": 0,
+    "image-hint": null,
+    "image-instructions": null,
+    "question-type": "multiple-choice"
+  },
+  {
+    "id": "cat6-q3",
+    "categoryId": "cat6",
+    "points": 300,
+    "title": "Which gas do plants absorb from the atmosphere?",
+    "choices": [
+      "Carbon Dioxide",
+      "Oxygen",
+      "Nitrogen",
+      "Helium"
+    ],
+    "correct-answer-index": 0,
+    "image-hint": null,
+    "image-instructions": null,
+    "question-type": "multiple-choice"
+  },
+  {
+    "id": "cat6-q4",
+    "categoryId": "cat6",
+    "points": 300,
+    "title": "What is the speed of light in vacuum (in km/s)?",
+    "choices": [
+      "300,000",
+      "150,000",
+      "1,080",
+      "30,000"
+    ],
+    "correct-answer-index": 0,
+    "image-hint": null,
+    "image-instructions": null,
+    "question-type": "multiple-choice"
+  },
+  {
+    "id": "cat6-q5",
+    "categoryId": "cat6",
+    "points": 500,
+    "title": "Who proposed the theory of relativity?",
+    "choices": [
+      "Albert Einstein",
+      "Isaac Newton",
+      "Galileo Galilei",
+      "Nikola Tesla"
+    ],
+    "correct-answer-index": 0,
+    "image-hint": null,
+    "image-instructions": null,
+    "question-type": "multiple-choice"
+  },
+  {
+    "id": "cat6-q6",
+    "categoryId": "cat6",
+    "points": 500,
+    "title": "What element has the atomic number 1?",
+    "choices": [
+      "Hydrogen",
+      "Helium",
+      "Oxygen",
+      "Carbon"
+    ],
+    "correct-answer-index": 0,
+    "image-hint": null,
+    "image-instructions": null,
+    "question-type": "multiple-choice"
+  },
+  {
+    "id": "cat7-q1",
+    "categoryId": "cat7",
+    "points": 100,
+    "title": "What is the smallest prime number?",
+    "choices": [
+      "2",
+      "1",
+      "3",
+      "0"
+    ],
+    "correct-answer-index": 0,
+    "image-hint": null,
+    "image-instructions": null,
+    "question-type": "multiple-choice"
+  },
+  {
+    "id": "cat7-q2",
+    "categoryId": "cat7",
+    "points": 100,
+    "title": "What is 5 + 7?",
+    "choices": [
+      "12",
+      "10",
+      "13",
+      "11"
+    ],
+    "correct-answer-index": 0,
+    "image-hint": null,
+    "image-instructions": null,
+    "question-type": "multiple-choice"
+  },
+  {
+    "id": "cat7-q3",
+    "categoryId": "cat7",
+    "points": 300,
+    "title": "What is the value of Pi (π) rounded to two decimal places?",
+    "choices": [
+      "3.14",
+      "3.15",
+      "3.13",
+      "3.16"
+    ],
+    "correct-answer-index": 0,
+    "image-hint": null,
+    "image-instructions": null,
+    "question-type": "multiple-choice"
+  },
+  {
+    "id": "cat7-q4",
+    "categoryId": "cat7",
+    "points": 300,
+    "title": "What is the square root of 81?",
+    "choices": [
+      "9",
+      "8",
+      "7",
+      "6"
+    ],
+    "correct-answer-index": 0,
+    "image-hint": null,
+    "image-instructions": null,
+    "question-type": "multiple-choice"
+  },
+  {
+    "id": "cat7-q5",
+    "categoryId": "cat7",
+    "points": 500,
+    "title": "What is the derivative of x²?",
+    "choices": [
+      "2x",
+      "x",
+      "x²",
+      "1"
+    ],
+    "correct-answer-index": 0,
+    "image-hint": null,
+    "image-instructions": null,
+    "question-type": "multiple-choice"
+  },
+  {
+    "id": "cat7-q6",
+    "categoryId": "cat7",
+    "points": 500,
+    "title": "Solve for x: 2x + 3 = 11",
+    "choices": [
+      "4",
+      "5",
+      "3",
+      "6"
+    ],
+    "correct-answer-index": 0,
+    "image-hint": null,
+    "image-instructions": null,
+    "question-type": "multiple-choice"
+  },
+  {
+    "id": "cat4-q1",
+    "categoryId": "cat4",
+    "points": 100,
+    "title": "Which language is primarily spoken in Brazil?",
+    "choices": [
+      "Portuguese",
+      "Spanish",
+      "English",
+      "French"
+    ],
+    "correct-answer-index": 0,
+    "image-hint": null,
+    "image-instructions": null,
+    "question-type": "multiple-choice"
+  },
+  {
+    "id": "cat4-q2",
+    "categoryId": "cat4",
+    "points": 100,
+    "title": "What is the tallest mountain in the world?",
+    "choices": [
+      "Mount Everest",
+      "K2",
+      "Kangchenjunga",
+      "Lhotse"
+    ],
+    "correct-answer-index": 0,
+    "image-hint": null,
+    "image-instructions": null,
+    "question-type": "multiple-choice"
+  },
+  {
+    "id": "cat4-q3",
+    "categoryId": "cat4",
+    "points": 300,
+    "title": "Which ocean is the largest by surface area?",
+    "choices": [
+      "Pacific Ocean",
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "Arctic Ocean"
+    ],
+    "correct-answer-index": 0,
+    "image-hint": null,
+    "image-instructions": null,
+    "question-type": "multiple-choice"
+  },
+  {
+    "id": "cat4-q4",
+    "categoryId": "cat4",
+    "points": 300,
+    "title": "Who painted the Mona Lisa?",
+    "choices": [
+      "Leonardo da Vinci",
+      "Vincent van Gogh",
+      "Pablo Picasso",
+      "Michelangelo"
+    ],
+    "correct-answer-index": 0,
+    "image-hint": null,
+    "image-instructions": null,
+    "question-type": "multiple-choice"
+  },
+  {
+    "id": "cat4-q5",
+    "categoryId": "cat4",
+    "points": 500,
+    "title": "What is the formula for calculating the area of a circle?",
+    "choices": [
+      "πr²",
+      "2πr",
+      "πd",
+      "r²"
+    ],
+    "correct-answer-index": 0,
+    "image-hint": null,
+    "image-instructions": null,
+    "question-type": "multiple-choice"
+  },
+  {
+    "id": "cat4-q6",
+    "categoryId": "cat4",
+    "points": 500,
+    "title": "In which year did the Titanic sink?",
+    "choices": [
+      "1912",
+      "1905",
+      "1920",
+      "1898"
+    ],
+    "correct-answer-index": 0,
+    "image-hint": null,
+    "image-instructions": null,
+    "question-type": "multiple-choice"
+  }
+]

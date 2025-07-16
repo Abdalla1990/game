@@ -1,0 +1,138 @@
+[
+  {
+    "id": 1,
+    "categoryId": "cat1",
+    "points": 100,
+    "title": "من هو مؤسس الدولة الأموية؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "عبد الملك بن مروان",
+      "معاوية بن أبي سفيان",
+      "الوليد بن عبد الملك",
+      "عمر بن الخطاب"
+    ],
+    "correct-answer-index": 1
+  },
+  {
+    "id": 2,
+    "categoryId": "cat2",
+    "points": 300,
+    "title": "ما هو أكبر بلد عربي من حيث المساحة؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "مصر",
+      "السعودية",
+      "الجزائر",
+      "العراق"
+    ],
+    "correct-answer-index": 2
+  },
+  {
+    "id": 3,
+    "categoryId": "cat3",
+    "points": 500,
+    "title": "ما هو العنصر الكيميائي الذي يرمز له بالرمز 'Na'؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "الكالسيوم",
+      "الصوديوم",
+      "البوتاسيوم",
+      "الحديد"
+    ],
+    "correct-answer-index": 1
+  },
+  {
+    "id": 4,
+    "categoryId": "cat4",
+    "points": 100,
+    "title": "أي من هذه الرياضات تتضمن سباقاً على الطريق؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "كرة السلة",
+      "السباحة",
+      "ألعاب القوى",
+      "كرة القدم"
+    ],
+    "correct-answer-index": 2
+  },
+  {
+    "id": 5,
+    "categoryId": "cat5",
+    "points": 300,
+    "title": "ما هي العاصمة الثقافية للعالم العربي؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "القاهرة",
+      "بغداد",
+      "دمشق",
+      "الرباط"
+    ],
+    "correct-answer-index": 0
+  },
+  {
+    "id": 6,
+    "categoryId": "cat6",
+    "points": 500,
+    "title": "ما هو أصل كلمة 'لغة'؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "سريانية",
+      "لاتينية",
+      "عربية",
+      "فارسية"
+    ],
+    "correct-answer-index": 2
+  },
+  {
+    "id": 7,
+    "categoryId": "cat7",
+    "points": 100,
+    "title": "ما هي أولى آيات القرآن الكريم التي نزلت؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ",
+      "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+      "بِسْمِ اللَّهِ الرَّحْمَـٰنِ الرَّحِيمِ",
+      "أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ"
+    ],
+    "correct-answer-index": 0
+  },
+  {
+    "id": 8,
+    "categoryId": "cat8",
+    "points": 300,
+    "title": "كم عدد الدول العربية الأعضاء في جامعة الدول العربية؟",
+    "question-type": "range",
+    "min-value": 20,
+    "max-value": 30,
+    "correct-value": 22
+  },
+  {
+    "id": 9,
+    "categoryId": "cat4",
+    "points": 500,
+    "title": "من هو اللاعب العربي الذي حصل على الكرة الذهبية لأفضل لاعب في العالم؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "مروان الشماخ",
+      "رونالدو",
+      "محمد صلاح",
+      "الجزائري رياض محرز"
+    ],
+    "correct-answer-index": 2
+  },
+  {
+    "id": 10,
+    "categoryId": "cat3",
+    "points": 100,
+    "title": "ما هي أكبر كواكب المجموعة الشمسية؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "الأرض",
+      "المريخ",
+      "المشتري",
+      "زحل"
+    ],
+    "correct-answer-index": 2
+  }
+]
