@@ -1,0 +1,282 @@
+[
+  {
+    "id": "q1",
+    "categoryId": "cat1",
+    "points": 300,
+    "title": "متى وقعت معركة القادسية؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "سنة 13 هجرية",
+      "سنة 15 هجرية",
+      "سنة 17 هجرية",
+      "سنة 19 هجرية"
+    ],
+    "correct-answer-index": 2
+  },
+  {
+    "id": "q2",
+    "categoryId": "cat2",
+    "points": 100,
+    "title": "ما هي عاصمة مصر؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "القاهرة",
+      "الإسكندرية",
+      "الغردقة",
+      "شرم الشيخ"
+    ],
+    "correct-answer-index": 0
+  },
+  {
+    "id": "q3",
+    "categoryId": "cat3",
+    "points": 500,
+    "title": "ما هو العنصر الكيميائي الذي يحتوي على رقم ذري 79؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "الزئبق",
+      "الذهب",
+      "الفضة",
+      "البلاتين"
+    ],
+    "correct-answer-index": 1
+  },
+  {
+    "id": "q4",
+    "categoryId": "cat4",
+    "points": 300,
+    "title": "من هو اللاعب الذي سجل أكبر عدد من الأهداف في كأس العالم لكرة القدم؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "بيليه",
+      "دييغو مارادونا",
+      "ميروسلاف كلوزه",
+      "رونالدو"
+    ],
+    "correct-answer-index": 2
+  },
+  {
+    "id": "q5",
+    "categoryId": "cat5",
+    "points": 100,
+    "title": "ما هو اللون الذي يرمز للحزن في الثقافة العربية؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "الأحمر",
+      "الأخضر",
+      "الأسود",
+      "الأزرق"
+    ],
+    "correct-answer-index": 2
+  },
+  {
+    "id": "q6",
+    "categoryId": "cat6",
+    "points": 500,
+    "title": "ما هو الجذر اللغوي لكلمة 'كتاب'؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "ك-ت-ب",
+      "ك-ت-ا",
+      "ك-ب-ت",
+      "ت-ك-ب"
+    ],
+    "correct-answer-index": 0
+  },
+  {
+    "id": "q7",
+    "categoryId": "cat7",
+    "points": 300,
+    "title": "ما هو عدد سور القرآن الكريم؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "114",
+      "112",
+      "116",
+      "118"
+    ],
+    "correct-answer-index": 0
+  },
+  {
+    "id": "q8",
+    "categoryId": "cat8",
+    "points": 100,
+    "title": "ما هو الحيوان الذي يعتبر رمزاً للحكمة في الثقافة العربية؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "الأسد",
+      "الثعلب",
+      "الجمل",
+      "النسر"
+    ],
+    "correct-answer-index": 1
+  },
+  {
+    "id": "q9",
+    "categoryId": "cat1",
+    "points": 500,
+    "title": "من هو مؤسس الدولة الأموية؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "معاوية بن أبي سفيان",
+      "عبد الملك بن مروان",
+      "الوليد بن عبد الملك",
+      "يزيد بن معاوية"
+    ],
+    "correct-answer-index": 0
+  },
+  {
+    "id": "q10",
+    "categoryId": "cat2",
+    "points": 300,
+    "title": "ما هو أطول نهر في العالم؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "النيل",
+      "الأمازون",
+      "الميسيسيبي",
+      "اليانغتسي"
+    ],
+    "correct-answer-index": 1
+  },
+  {
+    "id": "q11",
+    "categoryId": "cat3",
+    "points": 100,
+    "title": "ما هو الكوكب الرابع من الشمس؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "الأرض",
+      "المريخ",
+      "زحل",
+      "الزهرة"
+    ],
+    "correct-answer-index": 1
+  },
+  {
+    "id": "q12",
+    "categoryId": "cat4",
+    "points": 500,
+    "title": "من هو اللاعب الذي فاز بأكبر عدد من الألقاب في التنس الكبرى؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "روجر فيدرر",
+      "رافائيل نادال",
+      "نوفاك ديوكوفيتش",
+      "بيت سامبراس"
+    ],
+    "correct-answer-index": 2
+  },
+  {
+    "id": "q13",
+    "categoryId": "cat5",
+    "points": 300,
+    "title": "ما هو الطبق التقليدي في المغرب؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "الكسكس",
+      "المنسف",
+      "المقلوبة",
+      "المولوخية"
+    ],
+    "correct-answer-index": 0
+  },
+  {
+    "id": "q14",
+    "categoryId": "cat6",
+    "points": 100,
+    "title": "'البَيْتُ' في اللغة العربية يعني؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "المكان",
+      "المأوى",
+      "المنزل",
+      "كل ما سبق"
+    ],
+    "correct-answer-index": 3
+  },
+  {
+    "id": "q15",
+    "categoryId": "cat7",
+    "points": 500,
+    "title": "ما هو عدد الأحاديث في صحيح البخاري؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "6000 حديث",
+      "7000 حديث",
+      "8000 حديث",
+      "9000 حديث"
+    ],
+    "correct-answer-index": 2
+  },
+  {
+    "id": "q16",
+    "categoryId": "cat8",
+    "points": 300,
+    "title": "'الجمل' في الثقافة العربية يرمز إلى؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "الصبر",
+      "القوة",
+      "الجمال",
+      "السرعة"
+    ],
+    "correct-answer-index": 0
+  },
+  {
+    "id": "q17",
+    "categoryId": "cat1",
+    "points": 100,
+    "title": "'فتح مكة' وقع في أي سنة هجرية؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "سنة 8 هجرية",
+      "سنة 10 هجرية",
+      "سنة 12 هجرية",
+      "سنة 14 هجرية"
+    ],
+    "correct-answer-index": 0
+  },
+  {
+    "id": "q18",
+    "categoryId": "cat2",
+    "points": 500,
+    "title": "ما هو أعلى جبل في العالم؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "جبل إيفرست",
+      "جبل كيليمنجارو",
+      "جبل كينشينجونغا",
+      "جبل لوتس"
+    ],
+    "correct-answer-index": 0
+  },
+  {
+    "id": "q19",
+    "categoryId": "cat3",
+    "points": 300,
+    "title": "'الجاذبية' هي قوة تسحب الأجسام نحو؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "الشمس",
+      "القمر",
+      "الأرض",
+      "الكواكب"
+    ],
+    "correct-answer-index": 2
+  },
+  {
+    "id": "q20",
+    "categoryId": "cat4",
+    "points": 100,
+    "title": "'محمد صلاح' يلعب في أي نادي؟",
+    "question-type": "multiple-choice",
+    "choices": [
+      "ريال مدريد",
+      "برشلونة",
+      "ليفربول",
+      "مانشستر يونايتد"
+    ],
+    "correct-answer-index": 2
+  }
+]
