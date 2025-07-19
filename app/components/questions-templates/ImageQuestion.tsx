@@ -15,6 +15,7 @@ const ImageQuestion: React.FC<ImageQuestionProps> = ({ question, selectedChoice,
 
   const handleSubmit = () => {
     if (!userAnswer) return;
+    console.log({ userAnswer, q: question['correct-answer'] })
     // Case-insensitive comparison for free-form answers
     onAnswer(userAnswer.trim().toLowerCase() === question['correct-answer'].toLowerCase());
   };
