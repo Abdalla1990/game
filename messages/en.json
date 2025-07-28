@@ -1,0 +1,32 @@
+{
+  "game": {
+    "endGame": "End Game",
+    "endGameConfirmation": "Are you sure you want to end this game? This action cannot be undone.",
+    "startGame": "Start Game",
+    "nextQuestion": "Next Question",
+    "previousQuestion": "Previous Question",
+    "score": "Score",
+    "round": "Round",
+    "question": "Question",
+    "answer": "Answer",
+    "winner": "Winner",
+    "gameEnded": "Game Ended"
+  },
+  "navigation": {
+    "account": "Account",
+    "rounds": "Rounds",
+    "createRound": "Create Round",
+    "game": "Game"
+  },
+  "common": {
+    "loading": "Loading...",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous"
+  }
+}

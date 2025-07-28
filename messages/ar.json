@@ -1,0 +1,32 @@
+{
+  "game": {
+    "endGame": "إنهاء اللعبة",
+    "endGameConfirmation": "هل أنت متأكد من أنك تريد إنهاء هذه اللعبة؟ هذا الإجراء لا يمكن التراجع عنه.",
+    "startGame": "بدء اللعبة",
+    "nextQuestion": "السؤال التالي",
+    "previousQuestion": "السؤال السابق",
+    "score": "النقاط",
+    "round": "الجولة",
+    "question": "السؤال",
+    "answer": "الإجابة",
+    "winner": "الفائز",
+    "gameEnded": "انتهت اللعبة"
+  },
+  "navigation": {
+    "account": "الحساب",
+    "rounds": "الجولات",
+    "createRound": "إنشاء جولة",
+    "game": "اللعبة"
+  },
+  "common": {
+    "loading": "جاري التحميل...",
+    "cancel": "إلغاء",
+    "confirm": "تأكيد",
+    "save": "حفظ",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "back": "رجوع",
+    "next": "التالي",
+    "previous": "السابق"
+  }
+}

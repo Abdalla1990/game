@@ -5,8 +5,10 @@ import Button from '@/components/ui/Button';
 import { Modal } from '@/components/ui/Modal';
 import { usePersistGameState } from '@/hooks/use-persist-game-state';
 import { useParams, useRouter } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 
 export function EndGameButton({ announceWinner }: { announceWinner: () => void }) {
+  const t = useTranslations('game');
   const params = useParams();
   const roundId = Array.isArray(params.roundId) ? params.roundId[0] : params.roundId;
   const { endGame } = usePersistGameState(roundId);
@@ -19,20 +21,20 @@ export function EndGameButton({ announceWinner }: { announceWinner: () => void }
         variant="secondary"
         className="bg-red-600 text-white hover:bg-red-700"
       >
-        End Game
+        {t('endGame')}
       </Button>
 
       <Modal
         isOpen={showModal}
-        title="End Game"
-        description="Are you sure you want to end this game? This action cannot be undone."
+        title={t('endGame')}
+        description={t('endGameConfirmation')}
         onClose={() => setShowModal(false)}
         onConfirm={() => {
           endGame();
           announceWinner();
           setShowModal(false);
         }}
-        confirmText="End Game"
+        confirmText={t('endGame')}
         variant="danger"
       />
     </>
