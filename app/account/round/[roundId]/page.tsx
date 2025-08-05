@@ -9,6 +9,7 @@ import { GameEndedModal } from "@/components/game/GameEndedModal";
 import { EndGameButton } from "@/components/game/EndGameButton";
 import Button from "@/components/ui/Button";
 import type { Question } from "@/database/types";
+import { useAuth } from '@/context/AuthContext';
 
 type Team = {
   id: string;
@@ -40,7 +41,7 @@ function renderQuestionCell({
   const qsPts = qs.filter((q: Question) => q.points === pts);
   const question = qsPts[nth];
 
-  const isAnswered = !!answeredQuestions.find(item => item.split("-")[0] === cid && item.split("-")[1] === question?.id)
+  const isAnswered = !!answeredQuestions.find(item => item.split("###")[0] === cid && item.split("###")[1] === question?.id)
   if (!question) {
     return (<td key={cid} className="border border-gray-300 p-2 text-center text-gray-400">N/A</td>);
   }
@@ -186,7 +187,7 @@ export default function GamePage() {
   // Use the useRound hook to fetch round data from DynamoDB
   const { data: roundData } = useRound(roundId);
   const { data: categoriesData } = useCategories();
-  const { data: allQuestions } = useQuestions();
+  const { data: allQuestions } = useQuestions({ url: roundData?.s3Location });
   const [questionMatrix, setQuestionMatrix] = useState<{ [categoryId: string]: Question[] }>({});
 
 

@@ -23,7 +23,23 @@ export interface Round {
   scores: { [teamId: string]: number };
   answeredQuestions: string[];
   isEnded: boolean;
+  s3Location?: string;
 };
+
+export interface RoundDynamoDBItem {
+  [key: string]: { S?: string; SS?: string[]; N?: string; BOOL?: boolean };
+  id: { S: string };
+  name: { S: string };
+  userId: { S: string };
+  categories: { SS: string[] };
+  teams: { S: string };
+  createdAt: { S: string };
+  currentTurnIdx: { N: string };
+  scores: { S: string };
+  answeredQuestions: { S: string };
+  isEnded: { BOOL: boolean };
+  publicUrl?: { S: string };
+}
 
 export interface Team {
   id: string;

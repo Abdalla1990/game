@@ -3,7 +3,7 @@
 import { redirect, useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { useAuth } from '@/context/AuthContext';
-import { useQuestions } from '@/context/queries';
+import { useQuestions, useRound } from '@/context/queries';
 import { useGame } from '@/context/GameContext';
 import Button from '@/components/ui/Button';
 import { getTemplateMap } from '@/components/questions-templates/templateMap';
@@ -15,9 +15,10 @@ export default function GameQuestionPage({
 }: {
   params: { roundId: string; questionId: string }
 }) {
+  const { data: roundData } = useRound(params?.roundId)
   const router = useRouter();
   const { user } = useAuth();
-  const { data: questions = [] } = useQuestions();
+  const { data: questions = [] } = useQuestions({ url: roundData?.s3Location });
   const { currentTurn, answerQuestion, setGameState, answeredQuestions } = useGame();
   const question = questions.find(q => q.id === params.questionId) as QuestionData | undefined;
   // const isAnswered = !!answeredQuestions.find(item => item?.split("-")[0] === question?.categoryId && item?.split("-")[1] === question?.id)
@@ -70,7 +71,7 @@ export default function GameQuestionPage({
         ...current,
         answeredQuestions: [
           ...(current?.answeredQuestions ?? []),
-          `${question.categoryId}-${question.id}`
+          `${question.categoryId}###${question.id}`
         ]
       }));
     }

@@ -16,16 +16,18 @@ export function useRound(roundId: string | undefined): UseQueryResult<Round & Ga
   });
 }
 
-export function useQuestions() {
+export function useQuestions({ url }: { url: string | undefined }) {
   return useQuery({
     queryKey: ['questions'] as const,
     queryFn: async () => {
-      const res = await fetch('/questions-ar.json');
+      if (!url) throw new Error('URL required');
+      const res = await fetch(url);
       if (!res.ok) throw new Error('Failed to fetch questions');
       const data = await res.json();
       if (!data) throw new Error('No questions data');
       return data as Question[];
-    }
+    },
+    enabled: !!url,
   });
 }
 

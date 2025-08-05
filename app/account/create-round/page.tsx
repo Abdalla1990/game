@@ -76,11 +76,13 @@ export default function CreateRoundPage() {
     };
     try {
       await createRound(roundData);
+      setIsLoading(false);
+      router.push(`/account/round/${roundId}`);
     } catch (err) {
       console.error("Failed to create round in DynamoDB:", err);
+      // we shouldnt let the user continue. 
     }
-    setIsLoading(false);
-    router.push(`/account/round/${roundId}`);
+
   };
 
   if (!user) {

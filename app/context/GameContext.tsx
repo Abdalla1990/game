@@ -92,7 +92,7 @@ const GameProviderInner = ({ children, roundId }: { children: React.ReactNode, r
         currentTurnIdx: (current.currentTurnIdx + 1) % roundData.teams.length,
         answeredQuestions: [
           ...(current?.answeredQuestions ?? []),
-          `${categoryId}-${questionId}`
+          `${categoryId}###${questionId}`
         ]
       }));
     }

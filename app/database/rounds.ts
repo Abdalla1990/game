@@ -1,8 +1,15 @@
 "use server"
 // Basic DynamoDB round creation utility
 // You must set AWS credentials in your environment for this to work
-import { DynamoDBClient, PutItemCommand, GetItemCommand, UpdateItemCommand, ScanCommand } from '@aws-sdk/client-dynamodb';
-import { RoundGameStateUpdate, Round, GameState } from './types';
+import { DynamoDBClient, PutItemCommand, GetItemCommand, UpdateItemCommand, ScanCommand, AttributeValue } from '@aws-sdk/client-dynamodb';
+import { RoundGameStateUpdate, Round, GameState, RoundDynamoDBItem } from './types';
+import { getQuestions } from './questions';
+
+// DynamoDB PutItem params type for a round with strict keys
+export type RoundPutItemParams = {
+  TableName: string;
+  Item: Record<keyof RoundDynamoDBItem, AttributeValue>;
+};
 
 const local = {
   region: "us-east-1",
@@ -12,8 +19,14 @@ const local = {
     secretAccessKey: "dummy",
   }
 }
-const stage = { region: process.env.AWS_REGION || 'us-east-1' }
-const client = new DynamoDBClient(process.env.NODE_ENV === 'development' ? local : stage);
+const stage = {
+  region: process.env.AWS_REGION || 'us-east-1',
+  credentials: {
+    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  }
+}
+const client = new DynamoDBClient(stage);
 
 export async function createRound(round: Partial<Round>): Promise<{ success: boolean }> {
   // Initialize scores for all teams
@@ -22,7 +35,7 @@ export async function createRound(round: Partial<Round>): Promise<{ success: boo
     initialScores[team.id] = 0;
   });
 
-  const params = {
+  let params: RoundPutItemParams = {
     TableName: process.env.DYNAMODB_ROUNDS_TABLE || 'game_rounds',
     Item: {
       id: { S: round.id },
@@ -38,8 +51,29 @@ export async function createRound(round: Partial<Round>): Promise<{ success: boo
       isEnded: { BOOL: false },
     },
   };
-  await client.send(new PutItemCommand(params));
-  return { success: true };
+
+  try {
+    const { data: {
+      userId,
+      roundId,
+      categoryIds,
+      totalQuestions,
+      categoryResults,
+      allQuestions,
+      publicUrl
+    } } = await getQuestions({ userId: round.userId, categoryIds: round.categories, roundId: round.id });
+    console.log("Fetched questions:", { userId, roundId, categoryIds, totalQuestions, categoryResults, allQuestions, publicUrl });
+    params.Item.publicUrl = { S: publicUrl };
+    await client.send(new PutItemCommand(params));
+
+    return { success: true };
+  } catch (error) {
+    console.error('Failed to fetch questions:', error);
+    throw new Error('Unable to generate questions for the round.');
+    // TODO handle this better: make sure we generate questions on the go or pull from a static file
+  }
+
+
 }
 
 export async function getRound(roundId: string): Promise<Round & GameState | null> {
@@ -64,6 +98,7 @@ export async function getRound(roundId: string): Promise<Round & GameState | nul
     scores: JSON.parse(result.Item.scores?.S ?? '{}'),
     answeredQuestions: JSON.parse(result.Item.answeredQuestions?.S ?? '[]'),
     isEnded: result.Item.isEnded?.BOOL ?? false,
+    s3Location: result.Item.publicUrl?.S,
   };
 }
 
